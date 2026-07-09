@@ -120,13 +120,34 @@ section h3 {
   margin: 0;
 }
 
-.participants-list li {
+.participant-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   background-color: white;
   color: #274060;
   border: 1px solid #cfe0ff;
   border-radius: 999px;
   padding: 4px 10px;
   font-size: 0.9rem;
+}
+
+.participant-name {
+  display: inline-block;
+}
+
+.participant-remove {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 0.95rem;
+  line-height: 1;
+  padding: 0;
+}
+
+.participant-remove:hover {
+  transform: scale(1.08);
 }
 
 .participants-empty {
